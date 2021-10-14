@@ -1,8 +1,8 @@
-package main
+package variables
 
 import "fmt"
 
-func main() {
+func VariableExamples() {
 	//Değişken tanılama
 	var name string = "onurmarangoz"
 	var amount int = 10
@@ -61,7 +61,7 @@ func main() {
 	fmt.Println(namex)
 	fmt.Printf("Veri Tipi : %T\n", namex)
 	fmt.Printf("Veri Tipi : %T\n", amountx)
-	fmt.Printf(namex)
+	fmt.Println(namex)
 	fmt.Println("")
 	fmt.Println(amountx)
 
