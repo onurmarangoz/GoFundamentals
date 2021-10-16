@@ -28,6 +28,6 @@ func Demo1() {
 		fmt.Println("Fena değil!")
 	}
 
-	fmt.Println("Tebrikler kazandınız")
+	fmt.Printf("Tebrikler %v tahminde bildiniz", sayac)
 
 }

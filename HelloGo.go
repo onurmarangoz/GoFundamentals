@@ -16,5 +16,7 @@ func main() {
 	conditionals.ConditionalsExamples2()
 	conditionals.Demo1()
 	loops.LoopsExamples()
-	loops.Demo1()
+	//loops.Demo1() //Tahmin oyunu
+	//loops.Demo2() //Asal Sayilar
+	loops.Demo3() //Arkadaş sayılar
 }
