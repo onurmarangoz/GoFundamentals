@@ -4,6 +4,7 @@ package main
 import (
 	"GoDemoModule/arrays"
 	"GoDemoModule/conditionals"
+	"GoDemoModule/for_range"
 	"GoDemoModule/functions"
 	"GoDemoModule/loops"
 	"GoDemoModule/maps"
@@ -46,4 +47,11 @@ func main() {
 	fmt.Println(functions.ToplaVariadic(sayilar...))
 	fmt.Println("---------------------------")
 	maps.Demo1()
+	fmt.Println("---------------------------")
+	for_range.Demo1()
+	fmt.Println("---------------------------")
+	for_range.Demo2()
+	fmt.Println("---------------------------")
+	for_range.Demo3()
+
 }
