@@ -4,6 +4,7 @@ package main
 import (
 	"GoDemoModule/arrays"
 	"GoDemoModule/conditionals"
+	"GoDemoModule/functions"
 	"GoDemoModule/loops"
 	"GoDemoModule/slices"
 	"GoDemoModule/variables"
@@ -29,4 +30,17 @@ func main() {
 	fmt.Println("---------------------------")
 	//slices.Demo1() //Slice tanımlama ve yeni değer atama
 	slices.Demo2()
+	fmt.Println("---------------------------")
+	functions.Merhaba("Onur")
+	fmt.Println(functions.Topla(10, 15))
+	sonuc1, sonuc2, sonuc3, _ := functions.DortIslem(5, 4)
+	fmt.Println("Toplam :", sonuc1)
+	fmt.Println("Cıkarma :", sonuc2)
+	fmt.Println("Carpma :", sonuc3)
+	//fmt.Println("Bolme :", sonuc4)
+
+	fmt.Println(functions.ToplaVariadic(1, 2, 3, 4, 5))
+
+	sayilar := []int{1, 2, 3, 4, 5, 6}
+	fmt.Println(functions.ToplaVariadic(sayilar...))
 }
