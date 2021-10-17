@@ -6,6 +6,7 @@ import (
 	"GoDemoModule/conditionals"
 	"GoDemoModule/functions"
 	"GoDemoModule/loops"
+	"GoDemoModule/maps"
 	"GoDemoModule/slices"
 	"GoDemoModule/variables"
 	"fmt"
@@ -43,4 +44,6 @@ func main() {
 
 	sayilar := []int{1, 2, 3, 4, 5, 6}
 	fmt.Println(functions.ToplaVariadic(sayilar...))
+	fmt.Println("---------------------------")
+	maps.Demo1()
 }
