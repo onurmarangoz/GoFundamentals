@@ -8,6 +8,7 @@ import (
 	"GoDemoModule/functions"
 	"GoDemoModule/loops"
 	"GoDemoModule/maps"
+	"GoDemoModule/pointers"
 	"GoDemoModule/slices"
 	"GoDemoModule/variables"
 	"fmt"
@@ -53,5 +54,15 @@ func main() {
 	for_range.Demo2()
 	fmt.Println("---------------------------")
 	for_range.Demo3()
+	fmt.Println("---------------------------")
+	sayi := 20
+	pointers.Demo1(&sayi)
+
+	fmt.Println("Maindeki sayi", sayi)
+
+	fmt.Println("---------------------------")
+	sayilarPointer := []int{1, 2, 3}
+	pointers.Demo2(sayilarPointer)
+	fmt.Println("Maindeki sayi", sayilarPointer[0])
 
 }
