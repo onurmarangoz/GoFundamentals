@@ -10,6 +10,7 @@ import (
 	"GoDemoModule/maps"
 	"GoDemoModule/pointers"
 	"GoDemoModule/slices"
+	"GoDemoModule/structs"
 	"GoDemoModule/variables"
 	"fmt"
 )
@@ -64,5 +65,8 @@ func main() {
 	sayilarPointer := []int{1, 2, 3}
 	pointers.Demo2(sayilarPointer)
 	fmt.Println("Maindeki sayi", sayilarPointer[0])
+	fmt.Println("---------------------------")
 
+	structs.Demo1()
+	structs.Demo2()
 }
