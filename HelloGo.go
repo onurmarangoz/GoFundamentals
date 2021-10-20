@@ -6,6 +6,7 @@ import (
 	"GoDemoModule/conditionals"
 	"GoDemoModule/for_range"
 	"GoDemoModule/functions"
+	goroutines "GoDemoModule/goRoutines"
 	"GoDemoModule/loops"
 	"GoDemoModule/maps"
 	"GoDemoModule/pointers"
@@ -13,6 +14,7 @@ import (
 	"GoDemoModule/structs"
 	"GoDemoModule/variables"
 	"fmt"
+	"time"
 )
 
 func main() {
@@ -69,4 +71,11 @@ func main() {
 
 	structs.Demo1()
 	structs.Demo2()
+	fmt.Println("---------------------------")
+
+	//Go Routine ile asenkron programlama yapma
+	go goroutines.CiftSayilar()
+	go goroutines.TekSayilar()
+	time.Sleep(5 * time.Second)
+	fmt.Println("Main sonu")
 }
