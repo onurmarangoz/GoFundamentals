@@ -3,10 +3,10 @@ package main
 //Birden fazla import kullanımı için format parantez içinde verilmeli
 import (
 	"GoDemoModule/arrays"
+	"GoDemoModule/channels"
 	"GoDemoModule/conditionals"
 	"GoDemoModule/for_range"
 	"GoDemoModule/functions"
-	goroutines "GoDemoModule/goRoutines"
 	"GoDemoModule/loops"
 	"GoDemoModule/maps"
 	"GoDemoModule/pointers"
@@ -14,7 +14,6 @@ import (
 	"GoDemoModule/structs"
 	"GoDemoModule/variables"
 	"fmt"
-	"time"
 )
 
 func main() {
@@ -74,8 +73,19 @@ func main() {
 	fmt.Println("---------------------------")
 
 	//Go Routine ile asenkron programlama yapma
-	go goroutines.CiftSayilar()
-	go goroutines.TekSayilar()
-	time.Sleep(5 * time.Second)
+	//go goroutines.CiftSayilar()
+	//go goroutines.TekSayilar()
+
+	//Channel ile örnekler
+	ciftSayiToplamCn := make(chan int)
+	tekSayiToplamCn := make(chan int)
+
+	go channels.CiftSayilar(ciftSayiToplamCn)
+	go channels.TekSayilar(tekSayiToplamCn)
+
+	ciftSayiToplam, tekSayiToplam := <-ciftSayiToplamCn, <-tekSayiToplamCn
+
+	carpim := ciftSayiToplam * tekSayiToplam
+	fmt.Println("Çarpım :", carpim)
 	fmt.Println("Main sonu")
 }
