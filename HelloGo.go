@@ -3,10 +3,10 @@ package main
 //Birden fazla import kullanımı için format parantez içinde verilmeli
 import (
 	"GoDemoModule/arrays"
-	"GoDemoModule/channels"
 	"GoDemoModule/conditionals"
 	"GoDemoModule/for_range"
 	"GoDemoModule/functions"
+	"GoDemoModule/interfaces"
 	"GoDemoModule/loops"
 	"GoDemoModule/maps"
 	"GoDemoModule/pointers"
@@ -77,15 +77,21 @@ func main() {
 	//go goroutines.TekSayilar()
 
 	//Channel ile örnekler
-	ciftSayiToplamCn := make(chan int)
-	tekSayiToplamCn := make(chan int)
+	//ciftSayiToplamCn := make(chan int)
+	//tekSayiToplamCn := make(chan int)
 
-	go channels.CiftSayilar(ciftSayiToplamCn)
-	go channels.TekSayilar(tekSayiToplamCn)
+	//go channels.CiftSayilar(ciftSayiToplamCn)
+	//go channels.TekSayilar(tekSayiToplamCn)
 
-	ciftSayiToplam, tekSayiToplam := <-ciftSayiToplamCn, <-tekSayiToplamCn
+	//ciftSayiToplam, tekSayiToplam := <-ciftSayiToplamCn, <-tekSayiToplamCn
 
-	carpim := ciftSayiToplam * tekSayiToplam
-	fmt.Println("Çarpım :", carpim)
+	//carpim := ciftSayiToplam * tekSayiToplam
+	//fmt.Println("Çarpım :", carpim)
+
+	fmt.Println("---------------------------")
+
+	interfaces.Demo1()
+	interfaces.Demo2()
+
 	fmt.Println("Main sonu")
 }
