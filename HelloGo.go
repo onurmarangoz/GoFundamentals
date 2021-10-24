@@ -4,6 +4,8 @@ package main
 import (
 	"GoDemoModule/arrays"
 	"GoDemoModule/conditionals"
+	deferstatement "GoDemoModule/defer_statement"
+	"GoDemoModule/error_handling"
 	"GoDemoModule/for_range"
 	"GoDemoModule/functions"
 	"GoDemoModule/interfaces"
@@ -92,6 +94,20 @@ func main() {
 
 	interfaces.Demo1()
 	interfaces.Demo2()
+	fmt.Println("---------------------------")
 
+	deferstatement.B()
+
+	deferstatement.Test()
+	deferstatement.Demo3()
+	fmt.Println("---------------------------")
+
+	error_handling.Demo1()
+	fmt.Println("---------------------------")
+	interfaces.Demo3()
+	fmt.Println("---------------------------")
+	error_handling.Demo2()
+	fmt.Println("---------------------------")
+	fmt.Println(error_handling.TahminEt2(110))
 	fmt.Println("Main sonu")
 }
