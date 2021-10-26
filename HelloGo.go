@@ -13,6 +13,7 @@ import (
 	"GoDemoModule/maps"
 	"GoDemoModule/pointers"
 	"GoDemoModule/slices"
+	"GoDemoModule/string_functions"
 	"GoDemoModule/structs"
 	"GoDemoModule/variables"
 	"fmt"
@@ -109,5 +110,8 @@ func main() {
 	error_handling.Demo2()
 	fmt.Println("---------------------------")
 	fmt.Println(error_handling.TahminEt2(110))
+	fmt.Println("---------------------------")
+
+	string_functions.Demo1()
 	fmt.Println("Main sonu")
 }
