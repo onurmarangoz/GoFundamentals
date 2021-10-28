@@ -12,6 +12,7 @@ import (
 	"GoDemoModule/loops"
 	"GoDemoModule/maps"
 	"GoDemoModule/pointers"
+	"GoDemoModule/restful"
 	"GoDemoModule/slices"
 	"GoDemoModule/string_functions"
 	"GoDemoModule/structs"
@@ -113,5 +114,9 @@ func main() {
 	fmt.Println("---------------------------")
 
 	string_functions.Demo1()
+	fmt.Println("---------------------------")
+	restful.Demo1()
+	fmt.Println("---------------------------")
+	restful.Demo2()
 	fmt.Println("Main sonu")
 }
