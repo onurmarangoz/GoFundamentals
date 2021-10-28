@@ -1,0 +1,32 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "productName": "Çikolatalı Gofret",
+            "categoryId": 1,
+            "unitPrice": 2.34
+        },
+        {
+            "id": 2,
+            "productName": "Çikolatasız Gofret",
+            "categoryId": 1,
+            "unitPrice": 1.75
+        },
+        {
+            "id": 3,
+            "productName": "Gofretsiz Çikoltaka",
+            "categoryId": 2,
+            "unitPrice": 0.89
+        }
+    ],
+    "categories": [
+        {
+            "id": 1,
+            "categoryName": "Gıda"
+        },
+        {
+            "id": 2,
+            "categoryName": "Absurd Gıda"
+        }
+    ]
+}
